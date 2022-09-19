@@ -1,0 +1,23 @@
+{
+    "entities": [
+        {
+            "typeName": "cp_worksheet",
+            "guid": -6,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "dg-initiatives-q1@dg-initiatives-quarterly@prd-atlas@dgi@cp",
+                "name": "DG Initiatives - Q1",
+                "sheetDescription": "DG Initiatives - Q1",
+                "displayName": "DG Initiatives - Q1",
+                "owner": "CP-App@CP.COM",
+                "userDescription": "CDP - PRD Folder Location",
+                "fileOfWorksheet": {
+                    "typeName": "cp_file",
+                    "uniqueAttributes": {
+                        "qualifiedName": "dg-initiatives-quarterly@prd-atlas@dgi@cp"
+                    }
+                }
+            }
+        }
+    ]
+}

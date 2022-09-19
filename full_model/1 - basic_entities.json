@@ -1,0 +1,57 @@
+{
+    "entities": [
+        {
+            "typeName": "cp_system",
+            "guid": -2,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "prd-atlas@dgi@cp",
+                "name": "PRD: Atlas Data Governance Tool",
+                "address": "atlas.infra.prd.cp.com",
+                "IP": "10.1.192.1",
+                "userDescription": "CDP - PRD Instance",
+                "description": "Technical System for Apache Atlas DGI",
+                "displayName": "PRD: Atlas Data Governance Tool",
+                "owner": "CP-Infra@CP.COM"
+            }
+        },
+        {
+            "typeName": "cp_folder",
+            "guid": -3,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "dg-initiatives-q1@prd-atlas@dgi@cp",
+                "name": "DG Initiatives - Quarter 1 Targets 2022",
+                "description": "Folder details for Production Data Goverance data - Target Q1",
+                "displayName": "PRD: Atlas Data Governance - Target Q1 on Production",
+                "owner": "CP-Infra@CP.COM",
+                "userDescription": "CDP - PRD Folder Location"
+            }
+        },
+        {
+            "typeName": "cp_person",
+            "guid": -4,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "asher@cp.com",
+                "name": "Asher",
+                "email": "asher@cp.com"
+            }
+        },
+        {
+            "typeName": "cp_file",
+            "guid": -5,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "dg-initiatives-quarterly@prd-atlas@dgi@cp",
+                "name": "DG Initiatives - Quarterly",
+                "size": "300 KB",
+                "fileType": "xlsx",
+                "filePermission": "rw+",
+                "displayName": "dg-quarterly.xlsx",
+                "owner": "CP-App@CP.COM",
+                "userDescription": "dg-quarterly.xlsx"
+            }
+        }
+    ]
+}

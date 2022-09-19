@@ -1,0 +1,77 @@
+{
+  "superTypes": [
+    "Referenceable"
+  ],
+  "name": "cp_person",
+  "description": "The cp_person is a person working for the organization and can have access to the files and folders as a part of his work.",
+  "attributeDefs": [
+    {
+      "name": "name",
+      "typeName": "string",
+      "isOptional": false,
+      "cardinality": "SINGLE",
+      "valuesMinCount": -1,
+      "valuesMaxCount": 1,
+      "isUnique": false,
+      "isIndexable": true,
+      "includeInNotification": false,
+      "searchWeight": -1
+    },
+    {
+      "name": "email",
+      "typeName": "string",
+      "isOptional": false,
+      "cardinality": "SINGLE",
+      "valuesMinCount": -1,
+      "valuesMaxCount": 1,
+      "isUnique": false,
+      "isIndexable": true,
+      "includeInNotification": false,
+      "searchWeight": -1
+    }
+  ],
+  "relationshipDefs": [
+    {
+      "name": "ownerToFolders",
+      "typeName": "cp_folder",
+      "isOptional": true,
+      "cardinality": "SET",
+      "valuesMinCount": -1,
+      "valuesMaxCount": -1,
+      "isUnique": false,
+      "isIndexable": false,
+      "includeInNotification": false,
+      "searchWeight": -1,
+      "relationshipTypeName": "cp_folder_owner_relationship",
+      "isLegacyAttribute": false
+    },
+    {
+      "name": "ownerToFiles",
+      "typeName": "cp_file",
+      "isOptional": true,
+      "cardinality": "SET",
+      "valuesMinCount": -1,
+      "valuesMaxCount": -1,
+      "isUnique": false,
+      "isIndexable": false,
+      "includeInNotification": false,
+      "searchWeight": -1,
+      "relationshipTypeName": "cp_file_owner_relationship",
+      "isLegacyAttribute": false
+    },
+    {
+      "name": "ownerToSystems",
+      "typeName": "cp_system",
+      "isOptional": true,
+      "cardinality": "SET",
+      "valuesMinCount": -1,
+      "valuesMaxCount": -1,
+      "isUnique": false,
+      "isIndexable": false,
+      "includeInNotification": false,
+      "searchWeight": -1,
+      "relationshipTypeName": "cp_system_owner_relationship",
+      "isLegacyAttribute": false
+    }
+  ]
+}

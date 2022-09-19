@@ -1,0 +1,180 @@
+{
+    "entities": [
+        {
+            "typeName": "cp_system",
+            "guid": -2,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "prd-atlas@dgi@cp",
+                "name": "PRD: Atlas Data Governance Tool",
+                "address": "atlas.infra.prd.cp.com",
+                "IP": "10.1.192.1",
+                "userDescription": "CDP - PRD Instance",
+                "description": "Technical System for Apache Atlas DGI",
+                "displayName": "PRD: Atlas Data Governance Tool",
+                "owner": "CP-Infra@CP.COM",
+                "systemFolders": [
+                    {
+                        "typeName": "cp_folder",
+                        "uniqueAttributes": {
+                            "qualifiedName": "dg-initiatives-q1@prd-atlas@dgi@cp"
+                        }
+                    }
+                ],
+                "systemOwner": {
+                    "typeName": "cp_person",
+                    "uniqueAttributes": {
+                        "qualifiedName": "asher@cp.com"
+                    }
+                }
+            }
+        },
+        {
+            "typeName": "cp_folder",
+            "guid": -3,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "dg-initiatives-q1@prd-atlas@dgi@cp",
+                "name": "DG Initiatives - Quarter 1 Targets 2022",
+                "description": "Folder details for Production Data Goverance data - Target Q1",
+                "displayName": "PRD: Atlas Data Governance - Target Q1 on Production",
+                "owner": "CP-Infra@CP.COM",
+                "userDescription": "CDP - PRD Folder Location",
+                "folderOwner": [
+                    {
+                        "typeName": "cp_person",
+                        "uniqueAttributes": {
+                            "qualifiedName": "asher@cp.com"
+                        }
+                    }
+                ],
+                "filesInFolder": [
+                    {
+                        "typeName": "cp_file",
+                        "uniqueAttributes": {
+                            "qualifiedName": "dg-initiatives-quarterly@prd-atlas@dgi@cp"
+                        }
+                    }
+                ],
+                "folderInSystem": {
+                    "typeName": "cp_system",
+                    "uniqueAttributes": {
+                        "qualifiedName": "prd-atlas@dgi@cp"
+                    }
+                }
+            }
+        },
+        {
+            "typeName": "cp_person",
+            "guid": -4,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "asher@cp.com",
+                "name": "Asher",
+                "email": "asher@cp.com"
+            }
+        },
+        {
+            "typeName": "cp_file",
+            "guid": -5,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "dg-initiatives-quarterly@prd-atlas@dgi@cp",
+                "name": "DG Initiatives - Quarterly",
+                "size": "300 KB",
+                "fileType": "xlsx",
+                "filePermission": "rw+",
+                "displayName": "dg-quarterly.xlsx",
+                "owner": "CP-App@CP.COM",
+                "userDescription": "dg-quarterly.xlsx",
+                "fileOwner": [
+                    {
+                        "typeName": "cp_person",
+                        "uniqueAttributes": {
+                            "qualifiedName": "asher@cp.com"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "typeName": "cp_worksheet",
+            "guid": -6,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "dg-initiatives-q1@dg-initiatives-quarterly@prd-atlas@dgi@cp",
+                "name": "DG Initiatives - Q1",
+                "sheetDescription": "DG Initiatives - Q1",
+                "displayName": "DG Initiatives - Q1",
+                "owner": "CP-App@CP.COM",
+                "userDescription": "CDP - PRD Folder Location",
+                "fileOfWorksheet": {
+                    "typeName": "cp_file",
+                    "uniqueAttributes": {
+                        "qualifiedName": "dg-initiatives-quarterly@prd-atlas@dgi@cp"
+                    }
+                }
+            }
+        },
+        {
+            "typeName": "cp_column",
+            "guid": -7,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "id@dg-initiatives-q1@dg-initiatives-q1@prd-atlas@dgi@cp",
+                "name": "id",
+                "columnDescription": "Unique Number",
+                "isMandatory": true,
+                "isKey": true,
+                "keyType": "number",
+                "displayName": "Unique Identifier of DG Item - Finance",
+                "owner": "CP-App@CP.COM",
+                "userDescription": "Column of numbers -Uniquely Identified",
+                "columnOfWorksheet": {
+                    "typeName": "cp_worksheet",
+                    "uniqueAttributes": {
+                        "qualifiedName": "dg-initiatives-q1@dg-initiatives-quarterly@prd-atlas@dgi@cp"
+                    }
+                }
+            }
+        },
+        {
+            "typeName": "cp_column",
+            "guid": -8,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "department_name@dg-initiatives-q1@dg-initiatives-q1@prd-atlas@dgi@cp",
+                "name": "department_name",
+                "columnDescription": "Department Name",
+                "isMandatory": false,
+                "isKey": false,
+                "keyType": "string",
+                "columnOfWorksheet": {
+                    "typeName": "cp_worksheet",
+                    "uniqueAttributes": {
+                        "qualifiedName": "dg-initiatives-q1@dg-initiatives-quarterly@prd-atlas@dgi@cp"
+                    }
+                }
+            }
+        },
+        {
+            "typeName": "cp_column",
+            "guid": -9,
+            "createdBy": "admin",
+            "attributes": {
+                "qualifiedName": "completion_percentage@dg-initiatives-q1@dg-initiatives-q1@prd-atlas@dgi@cp",
+                "name": "completion_percentage",
+                "columnDescription": "Completion Percentage",
+                "isMandatory": false,
+                "isKey": false,
+                "keyType": "number",
+                "columnOfWorksheet": {
+                    "typeName": "cp_worksheet",
+                    "uniqueAttributes": {
+                        "qualifiedName": "dg-initiatives-q1@dg-initiatives-quarterly@prd-atlas@dgi@cp"
+                    }
+                }
+            }
+        }
+    ]
+  }
